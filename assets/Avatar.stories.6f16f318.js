@@ -1,0 +1,2 @@
+import{A as t}from"./index.8fe546b0.js";import"./index.31545a22.js";import"./iframe.c7432ab8.js";import"./index.2b3aa766.js";import"./jsx-runtime.00acccb3.js";const l={title:"Data Display/Avatar",component:t,args:{src:"https://github.com/kalilaziz.png",alt:"Kalil Aziz"},argTypes:{src:{control:{type:"text"}}}},p={},c={args:{src:void 0}},m=["Primary","WithFallback"];export{p as Primary,c as WithFallback,m as __namedExportsOrder,l as default};
+//# sourceMappingURL=Avatar.stories.6f16f318.js.map
