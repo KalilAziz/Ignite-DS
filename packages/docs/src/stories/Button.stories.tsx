@@ -7,10 +7,36 @@ export default {
   component: Button,
   args: {
     children: 'Send',
+    variant: 'primary',
+    size: 'md',
+  },
+  argTypes: {
+    variant: {
+      control: {
+        options: ['primary', 'secondary', 'tertiary'],
+        type: 'inline-radio',
+      },
+    },
+    size: {
+      control: {
+        options: ['sm', 'md'],
+        type: 'inline-radio',
+      },
+    },
+    disabled: {
+      control: {
+        type: 'boolean',
+      },
+    },
+    onClick: { action: 'clicked' },
   },
 } as Meta<ButtonProps>
 
-export const Primary: StoryObj<ButtonProps> = {}
+export const Primary: StoryObj<ButtonProps> = {
+  args: {
+    disabled: false,
+  },
+}
 export const Secondary: StoryObj<ButtonProps> = {
   args: {
     variant: 'secondary',
